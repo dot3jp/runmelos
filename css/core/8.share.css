@@ -1,0 +1,136 @@
+/* share common
+=======================*/
+#share > .wp{
+	display:none;
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(255,255,255,0.5);
+	cursor:default;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-fill-mode:forwards;
+}
+#share.on > .wp{
+	display:-webkit-box;
+	-webkit-animation-duration:0.5s;
+	-webkit-animation-name:shareOn;
+}
+#share.off > .wp{
+	display:-webkit-box;
+	pointer-events: none;
+	-webkit-animation-duration:0.3s;
+	-webkit-animation-name:shareOff;
+}
+@-webkit-keyframes shareOn{
+	0%{
+		opacity:0;
+		-webkit-transform:scale(1.3);
+	}
+	100%{
+		opacity:1;
+		-webkit-transform:scale(1);
+	}
+}
+@-webkit-keyframes shareOff{
+	0%{
+		display:-webkit-box;
+		opacity:1;
+		-webkit-transform:scale(1);
+	}
+	99.99%{
+		display:-webkit-box;
+		opacity:0;
+		-webkit-transform:scale(1.3);
+	}
+	100%{
+		display:none;
+		opacity:0;
+	}
+}
+#share > .wp a{
+	color:#999;
+}
+#share > .wp > .inner:before{
+	content:url(../img/share/infobox_top.png);
+	position:absolute;
+	margin-top:-130px;
+}
+#share > .wp > .inner{
+	position:relative;
+	width:572px;
+	margin:0 auto -65px;
+	-webkit-border-radius:0 0 8px 8px;
+	background-color:#000;
+	color:#fff;
+}
+#share > .wp > .inner > .txt{
+	margin-bottom:20px;
+	padding:0 30px;
+	font-size:14px;
+	line-height:1.4;
+}
+#sbm{
+	padding:0 30px 15px;
+}
+#sbm li{
+	display:inline-block;
+	vertical-align:top;
+}
+#share > .wp > .inner > footer{
+	padding:0 30px 20px;
+	color:#666;
+	font-size:14px;
+}
+#shareCloseBtn:before{
+	content:url(../img/share/close_btn.png);
+	display:inline-block;
+	margin-right:5px;
+	cursor:pointer;
+	vertical-align:middle;
+}
+#shareCloseBtn{
+	position:absolute;
+	right:10px;
+	bottom:20px;
+	color:#666;
+	cursor:pointer;
+	font-size:12px;
+}
+#shareShowBtn{
+	position:absolute;
+	z-index: 9;
+	right:10px;
+	bottom:10px;
+	width:24px;
+	height:24px;
+	-webkit-border-radius:8px;
+	background-repeat:no-repeat;
+	background-image:url(../img/share/info_btn.png);
+	cursor:pointer;
+	text-indent:-9999px;
+}
+.switchRead{
+	padding:20px 20px 5px;
+	text-align:center;
+}
+.switchRead li{
+	display:inline-block;
+	background-color:#444;
+	margin:0 20px;
+	padding:10px 20px;
+	cursor:pointer;
+	font-size:150%;
+	-webkit-border-radius:8px;
+}
+.switchRead li a{
+	display:block;
+	margin:-10px -20px;
+	padding:10px 20px;
+	height:100%;
+	color:#fff !important;
+	text-decoration:none;
+}

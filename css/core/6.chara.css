@@ -1,0 +1,194 @@
+/* chara common
+=======================*/
+#chara{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-3;
+	width:100%;
+	height:100%;
+}
+#chara > div{
+	position:absolute;
+	bottom:10px;
+	left:0;
+	margin-left:-50px;
+	width:100px;
+	height:100px;
+}
+#chara > div > div{
+	display:none;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	-webkit-transform-style: preserve-3d;
+}
+
+/* chara melos
+=======================*/
+#melos .run{
+	background-image:url(../img/chara/melos/run.png);
+}
+#melos .run_nude{
+	background-image:url(../img/chara/melos/run_nude.png);
+}
+#melos .run_tired{
+	background-image:url(../img/chara/melos/run_tired.png);
+}
+#melos .run_tired_nude{
+	background-image:url(../img/chara/melos/run_tired_nude.png);
+}
+#melos .dash{
+	background-image:url(../img/chara/melos/dash.png);
+}
+#melos .walk{
+	background-image:url(../img/chara/melos/walk.png);
+}
+#melos .walk_nude{
+	background-image:url(../img/chara/melos/walk_nude.png);
+}
+#melos .walk_tired_nude{
+	background-image:url(../img/chara/melos/walk_tired_nude.png);
+}
+#melos .stand{
+	background-image:url(../img/chara/melos/stand.png);
+}
+#melos .stand_nude{
+	background-image:url(../img/chara/melos/stand_nude.png);
+}
+#melos .stand_seminude{
+	background-image:url(../img/chara/melos/stand_seminude.png);
+}
+#melos .stand_tired_nude{
+	background-image:url(../img/chara/melos/stand_tired_nude.png);
+}
+#melos .cry{
+	background-image:url(../img/chara/melos/cry.png);
+}
+#melos .down{
+	background-image:url(../img/chara/melos/down.png);
+}
+#melos .down_nude{
+	background-image:url(../img/chara/melos/down_nude.png);
+}
+#melos .lookup{
+	background-image:url(../img/chara/melos/lookup.png);
+}
+#melos .tired{
+	background-image:url(../img/chara/melos/tired.png);
+}
+#melos .tired_nude{
+	background-image:url(../img/chara/melos/tired_nude.png);
+}
+#melos .punch{
+	background-image:url(../img/chara/melos/punch.png);
+}
+#melos .punched{
+	background-image:url(../img/chara/melos/punched.png);
+}
+#melos .knee{
+	background-image:url(../img/chara/melos/knee.png);
+}
+#melos .drink{
+	background-image:url(../img/chara/melos/drink.png);
+}
+#melos .hug{
+	background-image:url(../img/chara/melos/hug.png);
+}
+
+/* chara sister
+=======================*/
+#sister .normal{
+	background-image:url(../img/chara/sister/normal.png);
+}
+#sister .wedding{
+	background-image:url(../img/chara/sister/wedding.png);
+}
+#sister .angry{
+	background-image:url(../img/chara/sister/angry.png);
+}
+
+/* chara youngMen
+=======================*/
+#youngMen{
+	width:115px !important;
+	margin-left:-57.5 !important;
+}
+#youngMen div{
+	background-image:url(../img/chara/youngMen/youngmen.png);
+}
+/* chara oldman
+=======================*/
+#oldman div{
+	background-image:url(../img/chara/oldman/normal.png);
+}
+/* chara melos
+=======================*/
+#king .normal{
+	background-image:url(../img/chara/king/normal.png);
+}
+#king .sit{
+	background-image:url(../img/chara/king/sitdown.png);
+}/* chara soldier
+=======================*/
+#soldier1 div{
+	background-image:url(../img/chara/soldier/right.png);
+}
+#soldier2 div{
+	background-image:url(../img/chara/soldier/left.png);
+}
+/* chara serinuntius
+=======================*/
+#serinuntius .normal{
+	background-image:url(../img/chara/serinuntius/normal.png);
+}
+#serinuntius .stand{
+	background-image:url(../img/chara/serinuntius/stand.png);
+}
+#serinuntius .cross{
+	background-image:url(../img/chara/serinuntius/cross.png);
+}
+#serinuntius .punch{
+	background-image:url(../img/chara/serinuntius/punch.png);
+}
+#serinuntius .punched{
+	background-image:url(../img/chara/serinuntius/punched.png);
+}
+/* chara muko
+=======================*/
+#muko .normal{
+	background-image:url(../img/chara/muko/normal.png);
+}
+#muko .angry{
+	background-image:url(../img/chara/muko/angry.png);
+}
+#muko .wedding_normal{
+	background-image:url(../img/chara/muko/wedding_normal.png);
+}
+#muko .wedding_shy{
+	background-image:url(../img/chara/muko/wedding_shy.png);
+}
+/* chara youngMen
+=======================*/
+#murabito{
+	width:320px !important;
+	margin-left:-160px !important;
+}
+#murabito div{
+	background-image:url(../img/chara/audience/huge.png);
+}
+/* chara firostratos
+=======================*/
+#firostratos .run{
+	background-image:url(../img/chara/firostratos/run.png);
+}
+/* chara girl
+=======================*/
+#girl .walk{
+	background-image:url(../img/chara/girl/walk.png);
+}
+#girl .pass{
+	background-image:url(../img/chara/girl/pass.png);
+}

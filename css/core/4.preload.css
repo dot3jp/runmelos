@@ -1,0 +1,55 @@
+/*
+ * preload images cache
+ */
+#preload{
+	position:absolute;
+	top:-1px;
+	left:0;
+	width:1px;
+	height:1px;
+	background-repeat:no-repeat;
+	background-image:
+		url(../img/chara/melos/run.png),
+		url(../img/chara/melos/walk.png),
+		
+		url(../img/bg/space/moon.png),
+		url(../img/bg/space/sun.png),
+		url(../img/bg/space/sunset.png),
+
+		url(../img/bg/sky/star.png),
+		url(../img/bg/sky/cloud.png),
+		url(../img/bg/sky/cloud_bad.png),
+		url(../img/bg/sky/cloud_night.png),
+
+		url(../img/bg/distant/mountain.png),
+		url(../img/bg/distant/mountain_bad.png),
+		url(../img/bg/distant/mountain_bad_night.png),
+		url(../img/bg/distant/mountain_sunset.png),
+		url(../img/bg/distant/mountain_night.png),
+
+		url(../img/bg/short/mountain.png),
+		url(../img/bg/short/mountain_bad.png),
+		url(../img/bg/short/mountain_bad_night.png),
+		url(../img/bg/short/mountain_sunset.png),
+		url(../img/bg/short/mountain_night.png),
+
+		url(../img/bg/build/machinami_bg.png),
+		url(../img/bg/build/mori_bg.png),
+		url(../img/bg/build/siro_bg.png),
+
+		url(../img/bg/road/street.png),
+		url(../img/bg/road/street_sunset.png),
+		url(../img/bg/road/street_night.png),
+		url(../img/bg/road/street_bad.png),
+		url(../img/bg/road/street_bad_night.png),
+		url(../img/bg/road/rain.png),
+		
+		url(../img/object/bokujo_bg.png),
+		url(../img/object/home_bg.png),
+		url(../img/object/kinkei_bg.png),
+		url(../img/object/mukohome_bg.png),
+		url(../img/object/river_bg.png),
+		url(../img/object/shinden_bg.png),
+		url(../img/object/shiroyuka_bg.png),
+		url(../img/object/shokei_bg.png);
+}

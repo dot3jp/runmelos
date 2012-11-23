@@ -1,0 +1,120 @@
+/* object common
+=======================*/
+#object{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-3;
+	width:100%;
+	height:100%;
+}
+#object > div{
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+#object > div > div{
+	display:none;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+}
+
+/*
+ * bokujo
+ */
+#bokujoObj{
+	width:480px;
+	height:280px;
+	margin-left:-240px;
+}
+#bokujoObj > div{
+	background-image:url(../img/object/bokujo_bg.png);
+}
+
+/*
+ * home
+ */
+#homeObj{
+	width:643px;
+	height:282px;
+	margin-left:-321.5px;
+}
+#homeObj > div{
+	background-image:url(../img/object/home_bg.png);
+}
+
+/*
+ * mukohome
+ */
+#mukohomeObj{
+	width:688px;
+	height:273px;
+	margin-left:-344px;
+}
+#mukohomeObj > div{
+	background-image:url(../img/object/mukohome_bg.png);
+}
+
+/*
+ * river
+ */
+#riverObj{
+	width:1280px;
+	height:160px;
+	margin-left:-640px;
+}
+#riverObj > div{
+	background-image:url(../img/object/river_bg.png);
+}
+
+/*
+ * shinden
+ */
+#shindenObj{
+	width:640px;
+	height:330px;
+	margin-left:-320px;
+}
+#shindenObj > div{
+	background-image:url(../img/object/shinden_bg.png);
+}
+
+/*
+ * shiroyuka
+ */
+#shiroyukaObj{
+	width:640px;
+	height:181px;
+	margin-left:-320px;
+}
+#shiroyukaObj > div{
+	background-image:url(../img/object/shiroyuka_bg.png);
+}
+
+/*
+ * shokei
+ */
+#shokeiObj{
+	width:640px;
+	height:98px;
+	margin-left:-320px;
+}
+#shokeiObj > div{
+	background-image:url(../img/object/shokei_bg.png);
+}
+
+/*
+ * spring
+ */
+#springObj{
+	width:200px;
+	height:100px;
+	margin-left:-100px;
+}
+#springObj > div{
+	background-image:url(../img/object/spring_bg.png);
+}
+

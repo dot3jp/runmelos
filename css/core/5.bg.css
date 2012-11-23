@@ -1,0 +1,570 @@
+/* bg common
+=======================*/
+#bg{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-6;
+	width:100%;
+	height:100%;
+	background-position:50% 100%;
+}
+#bg > div{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+}
+#bg > div > div{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background-position:0 100%;
+	background-repeat:repeat-x;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-fill-mode:forwards;
+	-webkit-transform-style: preserve-3d;
+}
+#bg .planet{
+	top:auto;
+	left:50%;
+	bottom:0;
+	width:72px;
+	height:72px;
+	margin:0 0 -36px -36px;
+	padding-bottom:400px;
+	-webkit-transform-origin:50% 100%;
+	-webkit-transform:rotate(0deg);
+	-webkit-transition:all 2s ease-in-out;
+}
+#bg .planet > div{
+	display:none;
+	position:absolute;
+	width:72px;
+	height:72px;
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	-webkit-transform-origin:50% 50%;
+	-webkit-transform:rotate(0deg);
+	-webkit-transition:all 2s ease-in-out;
+}
+#bg .planet > .sun{
+	background-image:url(../img/bg/space/sun.png);
+}
+#bg .planet > .sunset{
+	background-image:url(../img/bg/space/sunset.png);
+}
+#bg .planet > .moon{
+	background-image:url(../img/bg/space/moon.png);
+}
+#bg .distant,
+#bg .short,
+#bg .build,
+#bg .road{
+	-webkit-transition-property: background-position;
+	-webkit-transition-timing-function: linear;
+}
+#bgTmp{
+	opacity:0;
+}
+
+/*
+ * star and cloud setting
+ */
+#bg .star{
+	display:none;
+	/*-webkit-animation-name:shine;
+	-webkit-animation-duration:16s;*/
+	background-image:url(../img/bg/sky/star.png);
+}
+#bg > div .cloud{
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-fill-mode:forwards;
+	-webkit-animation-name:loop;
+	-webkit-animation-duration:160s;
+}
+#bg > :not(.dark) .cloud{
+	background-image:url(../img/bg/sky/cloud_night.png);
+}
+#bg > .daytime .cloud{
+	background-image:url(../img/bg/sky/cloud.png);
+}
+/*
+ * morning scene
+ */
+#bg .morning .space{
+	background-image:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#00699b),
+		color-stop(0.5, #2dbabd),
+		to(#ff9900)
+	);
+}
+#bg .morning .planet > .sun{
+	display:block;
+}
+#bg .morning .distant{
+	background-image:url(../img/bg/distant/mountain_night.png);
+}
+#bg .morning .short{
+	background-image:url(../img/bg/short/mountain_night.png);
+}
+#bg .morning .road{
+	background-image:url(../img/bg/road/street_night.png);
+}
+
+/*
+ * daytime scene
+ */
+#bg .daytime .space{
+	background-image:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#006699),
+		to(#33cccc)
+	);
+}
+#bg .daytime .planet > .sun{
+	display:block;
+}
+#bg .daytime .distant{
+	background-image:url(../img/bg/distant/mountain.png);
+}
+#bg .daytime .short{
+	background-image:url(../img/bg/short/mountain.png);
+}
+#bg .daytime .road{
+	background-image:url(../img/bg/road/street.png);
+}
+
+/*
+ * sunset scene
+ */
+#bg .sunset .star{
+	display:block;
+}
+#bg .sunset .space{
+	background-image:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#564f44),
+		to(#ff7d26)
+	);
+}
+#bg .sunset .planet > .sunset{
+	display:block;
+}
+#bg .sunset .distant{
+	background-image:url(../img/bg/distant/mountain_sunset.png);
+}
+#bg .sunset .short{
+	background-image:url(../img/bg/short/mountain_sunset.png);
+}
+#bg .sunset .road{
+	background-image:url(../img/bg/road/street_sunset.png);
+}
+
+/*
+ * deepSunset scene
+ */
+#bg .deepSunset .star,
+#bg .downtownDeepSunset .star,
+#bg .downtownBeforeNight .star,
+#bg .beforeNight .star{
+	display:block;
+}
+#bg .deepSunset .space,
+#bg .downtownDeepSunset .space{
+	background-image:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#043260),
+		to(#ff7d26)
+	);
+}
+#bg .deepSunset .planet > .sunset,
+#bg .downtownDeepSunset .planet > .sunset,
+#bg .downtownBeforeNight .planet > .sunset,
+#bg .beforeNight .planet > .sunset{
+	display:block;
+}
+#bg .downtownBeforeNight .space,
+#bg .beforeNight .space{
+	background-image:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#043260),
+		color-stop(0.4, #043260),
+		to(#ff7d26)
+	);
+}
+#bg .deepSunset .distant,
+#bg .downtownDeepSunset .distant,
+#bg .downtownBeforeNight .distant,
+#bg .beforeNight .distant{
+	background-image:url(../img/bg/distant/mountain_sunset.png);
+}
+#bg .deepSunset .short,
+#bg .downtownDeepSunset .short,
+#bg .downtownBeforeNight .short,
+#bg .beforeNight .short{
+	background-image:url(../img/bg/short/mountain_sunset.png);
+}
+#bg .downtownDeepSunset .build,
+#bg .downtownBeforeNight .build{
+	background-image:url(../img/bg/build/machinami_bg.png);
+}
+#bg .deepSunset .road,
+#bg .downtownDeepSunset .road,
+#bg .downtownBeforeNight .road,
+#bg .beforeNight .road{
+	background-image:url(../img/bg/road/street_sunset.png);
+}
+
+/*
+ * night scene
+ */
+#bg .night .star,
+#bg .downtownNight .star{
+	display:block;
+}
+#bg .night .space,
+#bg .downtownNight .space{
+	background-image:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#003148),
+		to(#1f8083)
+	);
+}
+#bg .night .planet > .moon,
+#bg .downtownNight .planet > .moon{
+	display:block;
+}
+#bg .night .distant,
+#bg .downtownNight .distant{
+	background-image:url(../img/bg/distant/mountain_night.png);
+}
+#bg .night .short,
+#bg .downtownNight .short{
+	background-image:url(../img/bg/short/mountain_night.png);
+}
+#bg .downtownNight .build{
+	background-image:url(../img/bg/build/machinami_bg.png);
+}
+#bg .night .road,
+#bg .downtownNight .road{
+	background-image:url(../img/bg/road/street_night.png);
+}
+
+/*
+ * rainy (and rainyNight) , cloudy (and cloudyNight) scene
+ */
+#bg [class^="rainy"] .cloud,
+#bg [class^="cloudy"] .cloud{
+	background-image:url(../img/bg/sky/cloud_bad.png);
+}
+#bg [class^="rainy"] .space,
+#bg [class^="cloudy"] .space{
+	background-color:#666;
+/*	background-image:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#666),
+		to(#999)
+	);
+*/
+}
+#bg [class^="rainy"] .space{
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-fill-mode:forwards;
+	-webkit-animation-duration:20s;
+	-webkit-animation-name:thunder;
+	-webkit-animation-iteration-count:infinite;
+}
+
+#bg .rainyNight .space,
+#bg .cloudyNight .space{
+	background-color:#333 !important;
+/*	background-image:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#666),
+		to(#999)
+	);
+*/
+}
+#bg .rainyNight .space{
+	-webkit-animation-name:thunderNight;
+}
+#bg [class^="rainy"] .distant,
+#bg [class^="cloudy"] .distant{
+	background-image:url(../img/bg/distant/mountain_bad.png);
+}
+#bg .rainyNight .distant,
+#bg .cloudyNight .distant{
+	background-image:url(../img/bg/distant/mountain_bad_night.png);
+}
+#bg [class^="rainy"] .short,
+#bg [class^="cloudy"] .short{
+	background-image:url(../img/bg/short/mountain_bad.png);
+}
+#bg .rainyNight .short,
+#bg .cloudyNight .short{
+	background-image:url(../img/bg/short/mountain_bad_night.png);
+}
+#bg [class^="rainy"] .road,
+#bg [class^="cloudy"] .road{
+	background-image:url(../img/bg/road/street_bad.png);
+}
+#bg [class^="rainy"] .rain{
+	display:block;
+	background-repeat:repeat;
+	background-position:0 100%;
+	background-image:url(../img/bg/road/rain.png),url(../img/bg/road/rain.png);
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-fill-mode:forwards;
+	-webkit-animation-duration:1s;
+	-webkit-animation-name:rain;
+}
+
+/*
+ * castle scene
+ */
+#bg .castle .star{
+	display:block;
+}
+#bg .castle .space{
+	background-image:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#003148),
+		to(#1f8083)
+	);
+}
+#bg .castle .build{
+	background-image:url(../img/bg/build/siro_bg.png);
+}
+#bg .castle .road{
+	background-repeat:repeat-x;
+	background-image:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#999),
+		to(#999)
+	);
+	background-size:1px 26px;
+}
+
+/*
+ * forest scene
+ */
+#bg .forest .space{
+	background-color:#666;
+/*	background-image:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#666),
+		to(#999)
+	);
+*/
+}
+#bg .forest .distant{
+	background-image:url(../img/bg/distant/mountain_bad.png);
+}
+#bg .forest .short{
+	background-image:url(../img/bg/short/mountain_bad.png);
+}
+#bg .forest .build{
+	background-image:url(../img/bg/build/mori_bg.png);
+}
+#bg .forest .road{
+	background-image:url(../img/bg/road/street_bad.png);
+}
+
+/*
+ * dark scene
+ */
+#bg .dark .space{
+	background-image:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#000),
+		to(#222)
+	);
+}
+
+/*
+ * animation setting
+ */
+#bg.crossFade #bgTmp,
+#bg.fadeOutIn #bgTmp{
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-fill-mode:forwards;
+	-webkit-animation-duration:1s;
+}
+#bg.crossFade #bgTmp{
+	-webkit-animation-name:crossFade;
+}
+#bg.fadeOutIn #bgTmp{
+	-webkit-animation-name:fadeOutIn;
+}
+@-webkit-keyframes crossFade{
+	0%{
+		opacity:1;
+	}
+	100%{
+		opacity:0;
+	}
+}
+@-webkit-keyframes fadeOutIn{
+	0%{
+		opacity:0;
+		background-color:rgba(0,0,0,0);
+	}
+	33%{
+		opacity:1;
+		background-color:rgba(0,0,0,1);
+	}
+	66%{
+		opacity:1;
+		background-color:rgba(0,0,0,1);
+	}
+	100%{
+		opacity:0;
+		background-color:rgba(0,0,0,0);
+	}
+}
+@-webkit-keyframes loop{
+	0%{
+		background-position:0 100%;
+	}
+	100%{
+		background-position:640px 100%;
+	}
+}
+@-webkit-keyframes rain{
+	0%{
+		background-position:0 0, 100px 200px;
+	}
+	100%{
+		background-position:100px 750px , 200px 1000px;
+	}
+}
+@-webkit-keyframes thunder{
+	0%{
+		background-color:#666;
+	}
+	19.5%{
+		background-color:#666;
+	}
+	20%{
+		background-color:#c1b9c2;
+	}
+	20.5%{
+		background-color:#666;
+	}
+	39.5%{
+		background-color:#666;
+	}
+	40%{
+		background-color:#c1b9c2;
+	}
+	40.5%{
+		background-color:#666;
+	}
+	41%{
+		background-color:#c1b9c2;
+	}
+	41.5%{
+		background-color:#666;
+	}
+	100%{
+		background-color:#666;
+	}
+}
+@-webkit-keyframes thunderNight{
+	0%{
+		background-color:#333;
+	}
+	19.5%{
+		background-color:#333;
+	}
+	20%{
+		background-color:#c1b9c2;
+	}
+	20.5%{
+		background-color:#333;
+	}
+	39.5%{
+		background-color:#333;
+	}
+	40%{
+		background-color:#c1b9c2;
+	}
+	40.5%{
+		background-color:#333;
+	}
+	41%{
+		background-color:#c1b9c2;
+	}
+	41.5%{
+		background-color:#333;
+	}
+	100%{
+		background-color:#333;
+	}
+}
+@-webkit-keyframes shine{
+	0%{
+		opacity:1;
+	}
+	10%{
+		opacity:0.6;
+	}
+	20%{
+		opacity:0.9;
+	}
+	30%{
+		opacity:0.5;
+	}
+	40%{
+		opacity:0.8;
+	}
+	50%{
+		opacity:0.2;
+	}
+	60%{
+		opacity:0.6;
+	}
+	70%{
+		opacity:0.5;
+	}
+	80%{
+		opacity:0.9;
+	}
+	90%{
+		opacity:0.4;
+	}
+	100%{
+		opacity:0.7;
+	}
+}

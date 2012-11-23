@@ -1,0 +1,21 @@
+/* for minimum pc
+=======================*/
+@media screen and (max-device-width:560px) , screen and (max-width:560px){
+	body{font-size:17px !important;}
+	#docWrap .spLL{width:320px;}
+	#docWrap .spL{width:160px;}
+	#docWrap .spM{width:60px;}
+	#docWrap .spS{width:2em;}
+	#docWrap .spSS{width:1em;}
+}
+
+/* for smart phone
+=======================*/
+@media screen and (max-device-width:480px) , screen and (max-width:480px){
+	body{font-size:13px;}
+	#docWrap .spLL{width:320px;}
+	#docWrap .spL{width:160px;}
+	#docWrap .spM{width:60px;}
+	#docWrap .spS{width:2em;}
+	#docWrap .spSS{width:1em;}
+}
